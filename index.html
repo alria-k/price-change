@@ -10,9 +10,29 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="./style.min.css" />
+    <link rel="stylesheet" href="./cssReset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | Pricing component with toggle</title>
   </head>
   <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="header-title">Our Pricing</h1>
+        <div class="toggle__box">
+          <p class="toggle-p">Annually</p>
+          <label class="toggle">
+            <input class="toggle-tracker" type="checkbox" />
+            <span class="toggle-circle"></span>
+          </label>
+          <p class="toggle-p">Monthly</p>
+        </div>
+      </div>
+    </header>
     Our Pricing Annually Monthly Basic &dollar;19.99 &dollar;199.99 500 GB
     Storage 2 Users Allowed Send up to 3 GB Learn More Professional
     &dollar;24.99 &dollar;249.99 1 TB Storage 5 Users Allowed Send up to 10 GB
