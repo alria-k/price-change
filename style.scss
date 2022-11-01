@@ -46,5 +46,102 @@
         display: flex;
         gap: 20px;
         align-items: center;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 0 30px;
+    &-title{
+        color: hsl(232, 13%, 33%);
+        text-align: center;
+        margin-bottom: 40px;
+    }
+}
+.container{
+    max-width: 1440px;
+    width: 100%;
+}
+.card {
+    &-item {
+        max-width: 300px;
+        width: 100%;
+        padding: 20px 20px;
+        background-color: white;
+        color: hsl(232, 13%, 33%);
+        border-radius: 8px;
+        -webkit-box-shadow: 4px 4px 20px 11px rgba(34, 60, 80, 0.2);
+        -moz-box-shadow: 4px 4px 20px 11px rgba(34, 60, 80, 0.2);
+        box-shadow: 4px 4px 20px 11px rgba(34, 60, 80, 0.2);
+        &:nth-child(2){
+            color: white;
+            padding: 40px 20px;
+            background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+            @media (max-width: 960px) {
+                padding: 20px 20px;
+            }
+        }
+    }
+    &-title {
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+    &-price {
+        font-size: 56px;
+        margin-bottom: 20px;
+        span{
+            font-size: 26px;
+        }
+    }
+    &-btn {
+        border: 1px solid transparent;
+        background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+        color: white;
+        padding: 10px 0;
+        border-radius: 8px;
+        width: 100%;
+        transition-property: border, color, background;
+        transition-duration: 0.6s;
+        transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+        &:hover{
+            border: 1px solid ;
+            background: transparent;
+            color: hsl(237, 63%, 64%);
+        }
+        &__changed{
+            color: hsl(237, 63%, 64%);
+            background: white;
+            &:hover{
+                color: white;
+            }
+        }
+    }
+    &__box {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        @media (max-width: 960px) {
+            gap: 20px;
+        }
+    }
+    &__addvantages {
+        margin-bottom: 20px;
+        &-p{
+            font-size: 16px;
+            font-weight: 600;
+            border-top: 1px solid;
+            padding: 10px 0;
+            &:nth-child(3){
+                border-bottom: 1px solid;
+            }
+        }
     }
 }
